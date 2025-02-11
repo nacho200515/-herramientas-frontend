@@ -21,6 +21,17 @@ window.onload = function() {
 };
 
 function tomarHerramienta(id) {
-    // Simular que se toma la herramienta (esto lo conectaremos al backend)
-    alert(`Herramienta con ID: ${id} tomada.`);
+    const nombre = prompt("Ingresa tu nombre:");
+    fetch('https://<tu-proyecto>.glitch.me/tomar_herramienta', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id, nombre })
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert(data.message);
+        location.reload(); // Recargar la página para mostrar el cambio
+    });
+}
+
 }
