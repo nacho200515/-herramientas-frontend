@@ -22,7 +22,7 @@ window.onload = function() {
 
 function tomarHerramienta(id) {
     const nombre = prompt("Ingresa tu nombre:");
-    fetch('https://<tu-proyecto>.glitch.me/tomar_herramienta', {
+    fetch('https://herramientas-backend.glitch.me/tomar_herramienta', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ id, nombre })
