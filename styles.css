@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#herramientas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tool {
+    background: white;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tool img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
